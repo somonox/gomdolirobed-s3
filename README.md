@@ -128,7 +128,7 @@ git commit
 
 ### 명령어 예시
 ```bash
-git commit -m "feat :: 도서관 객체
+git commit -m "feat :: 출석부 객체
 - ~~ 구체적인 설명
 "
 ```
