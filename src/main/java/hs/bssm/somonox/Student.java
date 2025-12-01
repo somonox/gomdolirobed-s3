@@ -14,13 +14,13 @@ public class Student {
 
     public Student(String name, int grade, int clazz, int number, int attendance) {
         if (name == null)
-            throw new IllegalArgumentException("Name cannot be null");
+            throw new IllegalArgumentException("이름 NULL이 될 수 없습니다");
 
         if (name.length() < 1 || name.length() > 20)
-            throw new IllegalArgumentException("Name must be between 1 and 20 characters.");
+            throw new IllegalArgumentException("이름은 1자 이상 20자 이하이어야 합니다.");
 
         if (attendance < 0)
-            throw new IllegalArgumentException("Attendance cannot be negative.");
+            throw new IllegalArgumentException("참석 숫자는 음수가 될 수 없습니다.");
 
         this.name = name;
         this.grade = grade;

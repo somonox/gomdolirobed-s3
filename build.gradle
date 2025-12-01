@@ -2,10 +2,11 @@ plugins {
     id 'java'
 }
 
-group = 'com.example'
+group = 'hs.bssm.somonox'
 version = '1.0-SNAPSHOT'
 
-sourceCompatibility = '11'
+
+sourceCompatibility = '21'
 
 repositories {
     mavenCentral()

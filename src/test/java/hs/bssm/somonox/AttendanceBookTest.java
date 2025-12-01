@@ -26,7 +26,7 @@ public class AttendanceBookTest {
         // Exception message에 Already exists가 있는지 여부로 assert
         assertThatThrownBy(() -> book.addStudent(s1))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("already exists");
+                .hasMessageContaining("존재");
     }
 
     @Test
@@ -55,7 +55,7 @@ public class AttendanceBookTest {
         // 존재하지 않는 학생 삭제 시 예외
         assertThatThrownBy(() -> book.removeStudent("999999"))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("not found");
+                .hasMessageContaining("없습");
     }
 
     @Test
