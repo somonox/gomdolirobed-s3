@@ -1,11 +1,11 @@
 package hs.bssm.somonox;
 
 public class Student {
-    private String name;
-    private int grade;
+    private final String name;
+    private final int grade;
     // class is a reserved keyword in Java, so we use clazz instead of class
-    private int clazz;
-    private int number;
+    private final int clazz;
+    private final int number;
     private int attendance;
 
     public Student(String name, int grade, int clazz, int number) {
@@ -16,7 +16,7 @@ public class Student {
         if (name == null)
             throw new IllegalArgumentException("이름 NULL이 될 수 없습니다");
 
-        if (name.length() < 1 || name.length() > 20)
+        if (name.isEmpty() || name.length() > 20)
             throw new IllegalArgumentException("이름은 1자 이상 20자 이하이어야 합니다.");
 
         if (attendance < 0)
